@@ -19,14 +19,15 @@ let submitSong = function (){                              // Function for event
 
 
     let Songs = {                                                // create object
-        init: function(artist, song, year) {                      // object method
+        init: function(artist, song, year, list) {                      // object method
             this.artist = $('artist').value;                   // initializing properties
             this.song = $('song').value; 
             this.year = $('year').value; 
+            this.list = [];
         },
         
         getFullInfo: function() {                                 // another object method
-            return Songs(artist, song, year);
+            return '<p>' + this.artist + ' ' +  this.song + ', ' + this.year + '</p>';
         }
     }
     
