@@ -8,16 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="wrapper">
+    <div class="wrapper">
         <div id="left">
             <form action="">
                 <input type="text" name="" id="artist" placeholder="Artist name">
                 <input type="text" name="" id="song" placeholder="Song name">
-                <input type="text" name="" id="year "placeholder="Release date">
+                <input type="text" name="" id="year" placeholder="Release date">
                 <input id="submitAnswer" type="button" value="Submit to list">
             </form>
         </div>
         <div id="right">
+         <ul id="songList">
+         </ul>
+        </div>
+      </div>
+
+      <!---For planets, add radio buttons-->
+          <div class="wrapper">
+        <div id="choose ">
+            <form action="">
+                <input type="radio" id="mercury" name="planet" value="Mercury"> Mercury
+                <input type="radio" id="venus" name="planet" value="Venus"> Venus
+                <input type="radio" id="earth" name="planet" value="Earth"> Earth
+                <input type="radio" id="mars" name="planet" value="Mars"> Mars
+                <input type="radio" id="jupiter" name="planet" value="Jupiter"> Jupiter
+                <input type="radio" id="saturn" name="planet" value="Saturn"> Saturn
+                <input type="radio" id="uranus" name="planet" value="Uranus"> Uranus
+                <input type="radio" id="neptune" name="planet" value="Neptune"> Neptune
+                <input type="radio" id="pluto" name="planet" value="Pluto"> Pluto
+            </form>
+        </div>
+        <div id="planetInfoTxt">
 
         </div>
       </div>
