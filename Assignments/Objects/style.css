@@ -1,12 +1,16 @@
 .wrapper {
     display: flex;
-    padding: 150px;
+    margin: 50px;
   }
   
-  #left {
-    flex: 0 0 65%;
+  .left {
+    flex: 0 0 50%;
   }
   
-  #right {
+  .right {
     flex: 1;
+  }
+
+  h2 {
+    margin: 50px;
   }

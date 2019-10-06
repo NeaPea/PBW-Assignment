@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,29 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!--Song list-->
+    <h2>Song list</h2>
     <div class="wrapper">
-        <div id="left">
+        <div class="left">
             <form action="">
-                <input type="text" name="" id="artist" placeholder="Artist name">
-                <input type="text" name="" id="song" placeholder="Song name">
-                <input type="text" name="" id="year" placeholder="Release date">
+                <input type="text" name="" id="artist" placeholder="Artist name"><br>
+                <input type="text" name="" id="song" placeholder="Song name"><br>
+                <input type="text" name="" id="year" placeholder="Release date"><br>
                 <input id="submitAnswer" type="button" value="Submit to list">
             </form>
         </div>
-        <div id="right">
-         <ul id="songList">
-         </ul>
+        <div class="right">
+            <ul id="songList">
+            </ul>
         </div>
-      </div>
+    </div>
 
-      <!---For planets, add radio buttons-->
-          <div class="wrapper">
-        <div id="choose ">
+    <!---Planets selection-->
+    <h2>Planet information</h2>
+    <div class="wrapper">
+        <div id="choose">
             <form action="">
                 <input type="radio" id="mercury" name="planet" value="Mercury"> Mercury
                 <input type="radio" id="venus" name="planet" value="Venus"> Venus
@@ -38,9 +43,25 @@
                 <input type="radio" id="pluto" name="planet" value="Pluto"> Pluto
             </form>
         </div>
-        <div id="planetInfoTxt">
-
+        <div id="planetInfoTxt"
+            style="background-color: lightgreen; padding: 15px; margin-left: 100px; border-radius: 5%; width: 250px;">
+            <p><b>Click one of the buttons to the left to display information.</b></p>
         </div>
-      </div>
+    </div>
+    <!--Credit card validation-->
+    <h2>Validate credit card information</h2>
+    <div class="wrapper">
+        <div class="left">
+            <form action="">
+                <input type="text" name="" id="creditNr" placeholder="Credit card number"><br>
+                <input type="text" name="" id="expDate" placeholder="Expiration 4 digits"><br>
+                <input type="text" name="" id="ccv" placeholder="CCV"><br>
+                <input id="proceedBtn" type="button" value="Proceed">
+            </form>
+        </div>
+        <div id="validation">
+        </div>
+    </div>
 </body>
+
 </html>
