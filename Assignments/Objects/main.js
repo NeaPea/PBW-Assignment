@@ -13,7 +13,7 @@ let Song = {                                                // create object
     },
 
     getFullInfo: function () {                                 // another object method
-        return this.artist + ' - ' + this.song + ', ' + this.year;
+        return this.artist + ' ' + this.song + ', ' + this.year;
     },
 
     getHtmlElement: function () {                           // A function that will run each time we click Submit Song              
@@ -107,6 +107,14 @@ let changePlanet = function () {                                                
 
 
 
+
+// JS.OO.2
+
+
+
+
+
+
 let windowLoad = function () {
     createPlanets();                                                                // Our "Planet library". Here is where our information about the planets are stored.
 
@@ -121,5 +129,5 @@ let windowLoad = function () {
     $('neptune').addEventListener('click', changePlanet);
     $('pluto').addEventListener('click', changePlanet);
 }
-window.addEventListener('load', windowLoad);
 
+window.addEventListener('load', windowLoad);
